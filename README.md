@@ -26,7 +26,7 @@ cd password_validador_api
 ## POST:
 http://localhost:8080/password_validador_api/validate_password
 
-## JSON Senha Válida :
+## Body JSON Senha Válida :
 {"password": "Ab!cde1fg"}
 ````
 # Autor
