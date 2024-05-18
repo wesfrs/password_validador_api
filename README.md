@@ -21,6 +21,10 @@ cd password_validador_api
 ./mvnw spring-boot:run
 ```
 
+# Rotas
+##POST:
+http://localhost:8080/password_validador_api/validate_password
+
 # Autor
 Wesley Freire Silva
 
