@@ -22,7 +22,7 @@ cd password_validador_api
 ```
 
 # Rotas
-##POST:
+## POST:
 http://localhost:8080/password_validador_api/validate_password
 
 # Autor
