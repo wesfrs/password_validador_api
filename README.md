@@ -22,9 +22,13 @@ cd password_validador_api
 ```
 
 # Rotas
+```bash
 ## POST:
 http://localhost:8080/password_validador_api/validate_password
 
+## JSON Senha Válida :
+{"password": "Ab!cde1fg"}
+````
 # Autor
 Wesley Freire Silva
 
