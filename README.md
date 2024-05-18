@@ -31,6 +31,5 @@ http://localhost:8080/password_validador_api/validate_password
 ````
 # Autor
 Wesley Freire Silva
-
-[https://www.linkedin.com/in/wmazoni](https://www.linkedin.com/in/wesley-freire-silva/)
+[https://www.linkedin.com/in/wesley-freire-silva/]
 
