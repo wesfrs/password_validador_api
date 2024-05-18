@@ -12,7 +12,7 @@ Java 11
 # Como executar o projeto
 ```bash
 ## clonar repositório
-git clone https://??????
+git clone https://github.com/wesfrs/password_validador_api.git
 
 ## entrar na pasta do projeto
 cd password_validador_api
@@ -22,8 +22,7 @@ cd password_validador_api
 ```
 
 # Autor
-
-## Wesley Freire Silva
+Wesley Freire Silva
 
 [https://www.linkedin.com/in/wmazoni](https://www.linkedin.com/in/wesley-freire-silva/)
 
