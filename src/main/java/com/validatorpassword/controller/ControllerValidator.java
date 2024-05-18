@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.validatorpassword.service.PasswordValidator;
 
 @RestController
-@RequestMapping("/validator")
+@RequestMapping("/password_validador_api")
 public class ControllerValidator {
 
     @Autowired
@@ -19,7 +19,7 @@ public class ControllerValidator {
 
     private
 
-    @PostMapping("/validate") ResponseEntity<Boolean> validatePassword(@RequestBody Password password) {
+    @PostMapping("/validate_password") ResponseEntity<Boolean> validatePassword(@RequestBody Password password) {
         boolean isValid = passwordValidator.IsValid(password);
         return ResponseEntity.ok(isValid);
     }
