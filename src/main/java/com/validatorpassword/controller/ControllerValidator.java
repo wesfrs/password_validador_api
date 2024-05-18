@@ -1,5 +1,6 @@
 package com.validatorpassword.controller;
 
+import com.validatorpassword.Password;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -7,18 +8,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.validatorpassword.service.ServiceValidator;
+import com.validatorpassword.service.PasswordValidator;
 
 @RestController
 @RequestMapping("/validator")
 public class ControllerValidator {
 
     @Autowired
-    private ServiceValidator serviceValidator;
+    private PasswordValidator passwordValidator;
 
-    @PostMapping("/validate")
-    public ResponseEntity<Boolean> validatePassword(@RequestBody String password) {
-        boolean isValid = serviceValidator.isValid(password);
+    private
+
+    @PostMapping("/validate") ResponseEntity<Boolean> validatePassword(@RequestBody Password password) {
+        boolean isValid = passwordValidator.IsValid(password);
         return ResponseEntity.ok(isValid);
     }
 }
