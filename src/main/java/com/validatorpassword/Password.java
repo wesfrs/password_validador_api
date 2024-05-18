@@ -2,7 +2,7 @@ package com.validatorpassword;
 
 import java.io.Serializable;
 
-public class Password implements Serializable {
+public class Password {
     private String password;
 
     Password() {

@@ -16,42 +16,52 @@ public class PasswordValidatorTest {
         assertFalse(passwordValidator.IsValid(password));
     }
 
-//    @Test
-//    void isValid_returnsFalse_whenPasswordIsNull() {
-//        assertFalse(passwordValidator.IsValid(null));
-//    }
-//
-//    @Test
-//    void isValid_returnsFalse_whenPasswordHasSpaces() {
-//        assertFalse(passwordValidator.IsValid("password with spaces"));
-//    }
-//    @Test
-//    void isValid_returnsFalse_whenPasswordHasNoDigit() {
-//        assertFalse(passwordValidator.isValid("NoDigitHere!"));
-//    }
-//
-//    @Test
-//    void isValid_returnsFalse_whenPasswordHasNoLowercase() {
-//        assertFalse(passwordValidator.isValid("NOLOWERCASE123!"));
-//    }
-//
-//    @Test
-//    void isValid_returnsFalse_whenPasswordHasNoUppercase() {
-//        assertFalse(passwordValidator.isValid("nouppercase123!"));
-//    }
-//
-//    @Test
-//    void isValid_returnsFalse_whenPasswordHasNoSpecialChar() {
-//        assertFalse(passwordValidator.isValid("NoSpecialChar123"));
-//    }
-//
-//    @Test
-//    void isValid_returnsFalse_whenPasswordHasRepeatedChars() {
-//        assertFalse(passwordValidator.isValid("Repeated123!"));
-//    }
-//
-//    @Test
-//    void isValid_returnsTrue_whenPasswordIsValid() {
-//        assertTrue(passwordValidator.isValid("Valid123!"));
-//    }
+    @Test
+    void isValid_returnsFalse_whenPasswordHasSpaces() {
+        Password password = new Password();
+        password.setPassword("aBcDeFgHi 123!");
+        assertFalse(passwordValidator.IsValid(password));
+    }
+
+    @Test
+    void isValid_returnsFalse_whenPasswordHasNoDigit() {
+        Password password = new Password();
+        password.setPassword("aBcDeFgHiJkL!");
+        assertFalse(passwordValidator.IsValid(password));
+    }
+
+    @Test
+    void isValid_returnsFalse_whenPasswordHasNoLowercase() {
+        Password password = new Password();
+        password.setPassword("ABCDEFG123!");
+        assertFalse(passwordValidator.IsValid(password));
+    }
+
+    @Test
+    void isValid_returnsFalse_whenPasswordHasNoUppercase() {
+        Password password = new Password();
+        password.setPassword("abcdefg123!");
+        assertFalse(passwordValidator.IsValid(password));
+    }
+
+    @Test
+    void isValid_returnsFalse_whenPasswordHasNoSpecialChar() {
+        Password password = new Password();
+        password.setPassword("aBcDeFgHiJkL123");
+        assertFalse(passwordValidator.IsValid(password));
+    }
+
+    @Test
+    void isValid_returnsFalse_whenPasswordHasRepeatedCharacter() {
+        Password password = new Password();
+        password.setPassword("aaBcDeFgHiJk123!");
+        assertFalse(passwordValidator.IsValid(password));
+    }
+
+    @Test
+    void isValid_returnsTrue_whenPasswordIsValid() {
+        Password password = new Password();
+        password.setPassword("aBcDeFgHiJk123!");
+        assertTrue(passwordValidator.IsValid(password));
+    }
 }
