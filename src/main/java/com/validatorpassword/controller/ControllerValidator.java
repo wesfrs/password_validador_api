@@ -1,6 +1,6 @@
 package com.validatorpassword.controller;
 
-import com.validatorpassword.Password;
+import com.validatorpassword.entities.Password;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

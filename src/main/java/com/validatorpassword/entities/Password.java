@@ -1,11 +1,9 @@
-package com.validatorpassword;
-
-import java.io.Serializable;
+package com.validatorpassword.entities;
 
 public class Password {
     private String password;
 
-    Password() {
+    public Password() {
     }
 
     public String getPassword() {

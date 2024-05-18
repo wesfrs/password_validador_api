@@ -1,5 +1,5 @@
 package com.validatorpassword.service;
-import com.validatorpassword.Password;
+import com.validatorpassword.entities.Password;
 import org.springframework.stereotype.Service;
 
 import java.util.regex.Pattern;

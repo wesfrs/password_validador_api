@@ -1,5 +1,6 @@
 package com.validatorpassword;
 
+import com.validatorpassword.entities.Password;
 import com.validatorpassword.service.PasswordValidator;
 import org.junit.jupiter.api.Test;
 
