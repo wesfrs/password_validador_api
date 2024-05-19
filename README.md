@@ -1,5 +1,12 @@
 # Sobre o projeto
 O password_validador_api é uma REST API que realiza validação da senha enviada, atendendo os requisitos abaixo:
+• Possuir nove ou mais caracteres
+• Possuir ao menos 1 dígito
+• Possuir ao menos 1 letra minúscula
+• Possuir ao menos 1 letra maiúscula
+• Possuir ao menos 1 caractere especial dentre: "!@#$%^&*()-+"
+• Não possuir caracteres repetidos dentro do conjunto
+
 
 # Tecnologias utilizadas
 - Java
