@@ -15,7 +15,7 @@ O password_validador_api é uma REST API que realiza validação da senha enviad
 - Maven
 
 # Pré-requisitos:
-Java 17 ou superior
+Java 17 ou superior.
 
 # Como executar o projeto
 ```bash
